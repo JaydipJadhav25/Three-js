@@ -6,16 +6,19 @@ const camera = new THREE.PerspectiveCamera(
   1000
 );
 
- camera.position.z = 2;
+ camera.position.z = 3;
 
 
 //add
 scene.add(camera);
 
 
-const geometry = new THREE.BoxGeometry(1, 1, 1);
+const geometry = new THREE.BoxGeometry(1, 1, 2);
+// const geometry = new THREE.CircleGeometry(1, 32);
 const material = new THREE.MeshBasicMaterial({ color: 0x00ff00  } );
-const mesh = new THREE.Mesh(geometry, material); //add
+const mesh = new THREE.Mesh(geometry ,  material); //add
+
+
 
 scene.add(mesh);
 
